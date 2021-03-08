@@ -3,10 +3,6 @@ Web app of plants store with authentication system, created in MEAN Stack techno
 
  ## **Demo: http://dogenode.eu/demo**
 
-Link to repository (Access request required): 
-
-https://drive.google.com/file/d/1KnkHxVNiCpGahgyp5Uxx4O3SouFwNC6X/view?usp=sharing
-
 ______________________________________________________________________________________________________________________________________
 
 
