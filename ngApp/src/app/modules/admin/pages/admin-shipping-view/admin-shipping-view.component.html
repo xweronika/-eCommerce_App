@@ -1,0 +1,66 @@
+<div class="slide router">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/product/product.jpg">
+            <div class="carousel-caption d-md-block" *ngIf="shipping" style="color: black;">
+                <h5 style="color: black;">{{shipping.name}}</h5>
+                <small class="text-muted">{{shipping._id}}</small><br>
+                <p style="padding-top: 2mm;">Cena: {{shipping.price}} zł</p>
+                <p *ngIf="shipping.time">Czas oczekiwania: {{shipping.time}} dni</p>
+                <p *ngIf="shipping.adress">Adres odbioru: {{shipping.adress}}</p>
+                <p *ngIf="shipping.eco">Opakowanie eco: Tak</p>
+                <p *ngIf="!shipping.eco">Opakowanie eco: Nie</p>
+
+                <div class="buttons" style="padding-top: 1.5cm;">
+                    <button class="btn effect03 main-btn" [routerLink]="['/admin/shipping']" style="margin-right: 5mm;">
+                        <strong>Wstecz</strong>
+                    </button>
+                    <button class="btn effect02 main-btn" routerLink="edit" style="margin-right: 5mm;">
+                        <strong>Edytuj</strong>
+                    </button>
+                    <button data-toggle="modal" data-target="#exampleModal" class="btn effect01 main-btn">
+                        <strong>Usuń</strong>
+                    </button>
+
+                    <div style="display: flex; justify-content: space-around;">
+                        <div *ngIf="error" style="color: red; padding-top: 8mm;"> {{error}}
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="padding-top: 3.5cm;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Usuń wysyłkę</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> Czy na pewno chcesz usunąć tą wysyłkę? </p>
+                <small>Uwaga, usunięcie wysyłki jest nieodwracalne!</small>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content:center;">
+
+                <div class="buttons">
+                    <button class="btn effect01 modal-btn" (click)="deleteShipping(shipping)" data-dismiss="modal">
+                        <strong>Usuń</strong>
+                    </button>
+                    &nbsp;&nbsp;
+                    <button data-dismiss="modal" class="btn effect02 modal-btn">
+                        <strong>Zamknij</strong>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

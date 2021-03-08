@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row" style="max-width: 2800px;">
+    <div *ngFor="let user of users; let i = index" class="col-md-4" style="margin-bottom: 3%;">
+      <div class="card text-center  bg-white rounded shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{user.firstname}} {{user.surname}}</h5>
+          <p class="card-text small text-muted">{{user._id}}</p>
+          <p class="card-text">{{user.email}}</p>
+
+          <div class="buttons box px-3 py-2 mt-4">
+            <button class="btn additional effect" [routerLink]="user._id"
+              [ngClass]="{'pink': i%3===0, 'blue': i%3===1, 'yellow': i%3===2}">
+              <strong>Sprawdź</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 *ngIf="error" class="col-md-6 mx-auto row pt-2" style="color: red; text-align: center"> {{error}} </h3>

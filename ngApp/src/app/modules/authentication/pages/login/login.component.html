@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="container">
+        <h1>Logowanie</h1>
+
+        <form [formGroup]="loginUserData" (ngSubmit)="onSubmit()">
+
+            <input formControlName="email" class="form-group" id="email" type="text" placeholder="Email" name="email">
+
+            <input formControlName="password" class="form-group" id="password" type="password" placeholder="Hasło"
+                name="password">
+
+            <button type="submit" id="login-button">Zaloguj</button>
+            <div class="small" *ngIf="error" style="color: red; text-align: center; padding-top: 2mm;">{{error}}</div>
+        </form>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>

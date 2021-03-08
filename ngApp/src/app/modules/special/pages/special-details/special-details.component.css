@@ -1,0 +1,40 @@
+.tittle {
+    display: flex; justify-content: space-around;
+    padding-top: 1cm; 
+}
+.descr {
+    display: flex; 
+    justify-content: space-around;
+    padding-left: 3cm;
+    padding-right: 3cm;
+    font-weight: 100; 
+    font-size: 6mm;
+}
+.descr2 {
+    font-weight: 100; 
+    font-size: 6mm;
+}
+.listOfplants {
+    padding-left: 3cm;
+    padding-right: 3cm; 
+}
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-bottom: 1cm;
+  }
+  
+
+  .row::after {
+    content: "";
+    clear: both;
+  }
+  
+  .video{
+    margin-top: 20mm;
+    margin-bottom: 1cm;
+    display: flex; 
+    justify-content: space-around;
+}
+

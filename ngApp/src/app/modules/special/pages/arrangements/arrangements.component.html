@@ -1,0 +1,64 @@
+<!-- Arrangement categories -->
+<div class="box margins">
+  <div class="row" style="max-width: 2800px; padding-top: 2.2%;">
+    <div class="col-lg-12">
+      <div class="text-white p-5 shadow-sm rounded banner">
+        <p class="lead banner-title">Aranżacje</p>
+        <div class="card-columns color">
+
+          <div class="card text-center" [routerLink]="['/special/arrangements/salon']">
+            <div class="card-body">
+              <img [src]="salon" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">salon</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/arrangements/study']">
+            <div class="card-body">
+              <img [src]="study" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">pracownia</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/arrangements/bedroom']">
+            <div class="card-body">
+              <img [src]="bedroom" height="100" width="100"> <br><label>
+                <h5 style="padding-top:6mm">sypialnia
+                </h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/arrangements/kitchen']">
+            <div class="card-body">
+              <img [src]="kitchen" height="100" width="100"> <br><label>
+                <h5 style="padding-top:6mm">kuchnia
+                </h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/arrangements/bathroom']">
+            <div class="card-body">
+              <img [src]="bathroom" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">łazienka</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" routerLink='/special'>
+            <div class="card-body">
+              <img [src]="return" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">powrót</h5>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->

@@ -1,0 +1,123 @@
+.box {
+    color: #43b95e;
+    letter-spacing: 2px;
+}
+.center {
+    display: flex; 
+    justify-content:center;
+}
+
+.card-header 
+{
+  background-color: rgba(255, 255, 255, 0.856);
+}
+.banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    height: 1cm;
+}
+.banner-title {
+    display: flex; 
+    letter-spacing: 4px; 
+     justify-content: space-around; 
+     font-size: 28px;
+     font-weight: 200;
+     margin-top: -22px;
+   }
+    
+/* INPUTS */
+
+  textarea,
+  form input {
+    border: 1px solid #28a745;
+    letter-spacing: 0.09rem;
+    margin-top: 5px;
+    color: #292929;
+    border-radius: 4px;
+    box-shadow: unset;
+  }
+  
+  form label {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#28a745;
+    font-weight: 400;
+  }
+
+   /* RADIO */
+ input[type='radio']:checked:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    top: -3.7px;
+    left: -1.6px;
+    position: relative;
+    background-color: #28a745;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+    
+  /* checkbox */
+
+  input[type='checkbox']:checked:after {
+     width: 16px;
+     height: 16px;
+     border-radius: 4px;
+     top: -3.7px;
+     left: -1.6px;
+     position: relative;
+     background-color: #28a745;
+     content: '';
+     display: inline-block;
+     visibility: visible;
+     border: 2px solid white;
+   }
+   
+
+     /* BUTTON */
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    width: 250px;
+    letter-spacing: 0.04rem;
+    padding: 10px;
+  }
+
+  .btn:hover {
+    letter-spacing: 0.07em;
+  }
+  
+  /*btn_background*/
+  .effect01 {
+    color: rgb(0, 0, 0);
+    border: 1px solid #dcdcdc;
+    box-shadow:0px 0px 0px 1px  white inset;
+    background-color:  white;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  .effect01:hover {
+    border: 1px solid #dcdcdc;
+    background-color: #db8282;
+  }
+     /*btn_background2*/
+     .effect02 {
+       color: rgb(0, 0, 0);
+       border: 1px solid #dcdcdc;
+       box-shadow:0px 0px 0px 1px  white inset;
+       background-color:  white;
+       overflow: hidden;
+       position: relative;
+       transition: all 0.3s ease-in-out;
+     }
+     .effect02:hover {
+       border: 1px solid #dcdcdc;
+       background-color: #43b95e
+   
+     }
+  
+  

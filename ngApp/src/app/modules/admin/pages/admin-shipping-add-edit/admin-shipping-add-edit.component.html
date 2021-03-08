@@ -1,0 +1,52 @@
+<div class="container pt04" style="padding-bottom: 60px;">
+
+    <div class="card-header border-top" [ngSwitch]="edit">
+        <div class="text-white p-5 shadow-sm rounded banner">
+            <p *ngSwitchCase="false" class="lead banner-title">Dodaj wysyłkę</p>
+            <p *ngSwitchCase="true" class="lead banner-title">Edytuj wysyłkę</p>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <form class="form">
+            <div class="form-group" [ngClass]="{'was-validated': onClick}">
+                <label>Nazwa*</label>
+                <input [(ngModel)]="shipping.name" name="name" type="text" class="form-control rounded-0"
+                    required>
+            </div>
+            <div class="form-group" [ngClass]="{'was-validated': onClick}">
+                <label>Cena*</label>
+                <input [(ngModel)]="shipping.price" name="price" type="text" class="form-control rounded-0" required>
+            </div>
+            <div class="form-group">
+                <label>Czas oczekiwania</label>
+                <input [(ngModel)]="shipping.time" name="time" type="text" class="form-control rounded-0">
+            </div>
+            <div class="form-group">
+                <label>Adres odbioru</label>
+                <input [(ngModel)]="shipping.adress" name="adress" type="text" class="form-control rounded-0">
+            </div>
+            <div class="form-group pt-1">
+                <label style="padding-right: 5mm">Opakowanie eko:*</label>
+                <input [(ngModel)]="shipping.eco" [value]=true name='eco' type="radio" id=true>
+                <label style="padding-left: 2mm; padding-right: 5mm;" for=true>Tak</label>
+                <input [(ngModel)]="shipping.eco" [value]=false name='eco' type="radio" id=flase>
+                <label style="padding-left: 2mm; padding-right: 5mm;" for=flase>Nie</label>
+            </div>
+        </form>
+
+        <div class="buttons center" style="padding-top: 30px;">
+            <button type="button" class="btn effect01" (click)="cancel()">
+                <strong>Anuluj</strong>
+            </button> &nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn effect02" (click)="saveShipping();">
+                <strong>Zapisz</strong>
+            </button>
+        </div>
+
+    </div>
+    <div style="display: flex; justify-content: space-around;">
+        <div *ngIf="error" style="color: red;"> {{error}}
+        </div>
+    </div>
+</div>

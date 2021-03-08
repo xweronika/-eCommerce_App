@@ -1,0 +1,47 @@
+<div class="wrapper" [ngClass]="{'visible': isButtonVisible}">
+    <div class="container">
+        <h1>Rejestracja</h1>
+
+        <form class="form">
+            <input type="text" placeholder="Email*" [(ngModel)]="registerUserData.email" name="email" required>
+            <input type="text" placeholder="Imię*" [(ngModel)]="registerUserData.firstname" name="firstname" required>
+            <input type="text" placeholder="Nazwisko*" [(ngModel)]="registerUserData.surname" name="surname" required>
+            <input type="password" placeholder="Hasło*" [(ngModel)]="registerUserData.password" name="password"
+                required>
+            <input type="password" placeholder="Potwierdź hasło*" [(ngModel)]="registerUserData.confirm_password"
+                name="confirm_password" required>
+
+            <div style="margin: 3mm">
+                <button type="button" (click)="onClick()"
+                    style="background-color: rgba(255, 255, 255, 0.274); color: white; font-weight: 300;"
+                    class="dropdown-toggle">
+                    Adres dostawy</button>
+            </div>
+
+            <ng-container *ngIf="isButtonVisible" style="display: inline;">
+                <input type="text" placeholder="Ulica i numer" [(ngModel)]="registerUserData.address" name="address">
+                <input type="text" placeholder="Kod pocztowy" [(ngModel)]="registerUserData.postcode" name="postcode">
+                <input type="text" placeholder="Miasto" [(ngModel)]="registerUserData.city" name="city">
+                <input type="text" placeholder="Kraj" [(ngModel)]="registerUserData.country" name="country">
+                <input type="text" placeholder="Numer telefonu" [(ngModel)]="registerUserData.phone" name="phone">
+            </ng-container>
+
+            <button type="button" (click)="registerUser()" id="register-button">Zarejestruj</button>
+
+        </form>
+        <div class="small" *ngIf="error" style="color: red; text-align: center; margin-top: -3mm;">{{error}}</div>
+    </div>
+
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>

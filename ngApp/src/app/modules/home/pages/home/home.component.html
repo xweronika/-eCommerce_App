@@ -1,0 +1,55 @@
+<div id="carouselExampleIndicators" class="carousel slide router" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video class="d-block" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true"
+        alt="First slide">
+        <source src="assets/img/home/1.mp4" type="video/mp4" />
+      </video>
+      <div class="carousel-caption position1 d-md-block">
+        <h5>Zdobądź zielonego przyjeciela</h5>
+        <b>Sprawdź naszą ofertę i dobierz gatunek idealny dla siebie!</b>
+        <br><br>
+        <div class="buttons" style="padding-top: 7mm;">
+          <button routerLink="/product" class="btn effect01" type="button">
+            <strong>Kup teraz</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block width2" src="assets/img/home/2.jpg" alt="Second slide">
+      <div class="carousel-caption position2 d-md-block">
+        <h5>Rośliny są łatwe</h5>
+        <b>Zadbaj o swoją roślionę, dzięki naszemu poradnikowi.</b>
+        <div class="buttons" style="padding-top: 7mm;">
+          <button routerLink="/special" class="btn effect01" type="button">
+            <strong>Sprawdź</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block width3" src="assets/img/home/3.jpg" alt="Third slide">
+      <div class="carousel-caption position2 d-md-block">
+        <h5>Dekoruj roślinami</h5>
+        <b>Zobacz propozycje naszych aranżacji.</b>
+        <div class="buttons" style="padding-top: 7mm;">
+          <button routerLink="/special/arrangements" class="btn effect01" type="button">
+            <strong>Sprawdź</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>

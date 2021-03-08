@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" [ngClass]="{'scrollDown': scrollDown}">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home">Zielnik</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about-us">O nas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product">Rośliny</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/special">Poradnik</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="authService.getAdmin()" routerLink="/admin">Admin</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span type="button">
+              <img style="width: 30px;" src="assets/img/navbar/user.png">
+            </span>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <a class="nav-link dropdown-item" *ngIf="!authService.loggedIn()" routerLink="/auth/login"
+                routerLinkActive="active">Logowanie</a>
+              <a class="nav-link dropdown-item" *ngIf="!authService.loggedIn()" routerLink="/auth/register"
+                routerLinkActive="active">Rejestracja</a>
+
+              <ng-container *ngIf="(user$|async) as user">
+                <a class="nav-link dropdown-item" *ngIf="authService.loggedIn()" routerLink="/auth/account">
+                  Moje konto</a>
+              </ng-container>
+              <a class="nav-link dropdown-item" routerLink="/auth/user-orders"
+                *ngIf="authService.loggedIn()">Zamówienia</a>
+              <div class="dropdown-divider" *ngIf="authService.loggedIn()"></div>
+              <a class="nav-link dropdown-item" style="cursor:pointer" *ngIf="authService.loggedIn()"
+                (click)="authService.logoutUser()">Wyloguj</a>
+            </div>
+
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">
+            <a class="notification">
+              <img style="width: 30px;" src="assets/img/navbar/bag.png">
+              <span *ngIf="cartService.sumProductsInCart !== 0"
+                class="badge bg-success">{{cartService.sumProductsInCart}}</span>
+            </a>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="router">
+  <router-outlet></router-outlet>
+</div>

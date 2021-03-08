@@ -1,0 +1,28 @@
+<div class="buttons box py-4">
+    <button [routerLink]="['/admin/shipping/add']" class="btn main effect " type="button">
+        <strong>Dodaj nową wysyłkę</strong>
+    </button>
+</div>
+
+<div *ngIf="error" style="color: red; text-align: center; padding-bottom: 1cm;">{{error}} </div>
+
+<div class="container" style="padding-top: 3%;">
+    <div class="row" style="max-width: 2800px;">
+        <div class="col-md-4" *ngFor="let shipping of shippings; let i = index" style="margin-bottom: 3%;">
+            <div class="card text-center bg-white rounded shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{shipping.name}}</h5>
+                    <p class="card-text small text-muted">{{shipping._id}}</p>
+                    <p class="card-text">Cena: {{shipping.price}} zł</p>
+
+                    <div class="buttons box px-3 py-2 mt-4">
+                        <button class="btn additional effect" [routerLink]="shipping._id"
+                            [ngClass]="{'pink': i%3===0, 'blue': i%3===1, 'yellow': i%3===2}">
+                            <strong>Sprawdź</strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

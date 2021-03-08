@@ -1,0 +1,81 @@
+<!-- Plant categories -->
+<div class="box margins">
+  <div class="row" style="max-width: 2800px; padding-top: 2.2%;">
+    <div class="col-lg-12">
+      <div class="text-white p-5 shadow-sm rounded banner">
+        <p class="lead banner-title">Poradnik</p>
+        <div class="card-columns color">
+          <div class="card text-center" [routerLink]="['/special/fertilization']">
+            <div class="card-body">
+              <img [src]="fertilization" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">nawożenie </h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/airCleaning']">
+            <div class="card-body">
+              <img [src]="airCleaning" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">oczyszczanie</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/transplantation']">
+            <div class="card-body">
+              <img [src]="transplantation" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">przesadzanie</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/irradiation']">
+            <div class="card-body">
+              <img [src]="irradiation" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">naświetlanie</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/watering']">
+            <div class="card-body">
+              <img [src]="watering" height="100" width="100"> <br><label>
+                <h5 style="padding-top:6mm">podlewanie
+                </h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/pots']">
+            <div class="card-body">
+              <img [src]="pots" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">donice</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/cats']">
+            <div class="card-body">
+              <img [src]="cats" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">o kotach</h5>
+              </label>
+            </div>
+          </div>
+
+          <div class="card text-center" [routerLink]="['/special/arrangements']">
+            <div class="card-body">
+              <img [src]="arrangements" height="100" width="100"><br><label>
+                <h5 style="padding-top:6mm">aranżacje</h5>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->
+
+<h3 *ngIf="error" class="col-md-3 mx-auto row pt-2" style="color: red; text-align: center">{{error}} </h3>

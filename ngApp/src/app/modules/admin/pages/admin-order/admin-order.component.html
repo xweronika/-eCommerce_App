@@ -1,0 +1,21 @@
+<div class="box">
+    <div class="row mt-5" style="padding-top: 1%; max-width: 2800px;">
+        <div *ngFor="let order of orders; let i = index" class="col-md-4 mb-5">
+            <div class="card text-center bg-white rounded shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{orderStatuses[order.status]}}</h5>
+                    <p class="card-text small text-muted">{{order._id}}</p>
+                    <p class="card-text">Kwota: {{order.sum}} zł</p>
+
+                    <div class="buttons box px-3 py-2 mt-4">
+                        <button type="button" class="btn additional effect" [routerLink]="order._id"
+                            [ngClass]="{'pink': i%3===0, 'blue': i%3===1, 'yellow': i%3===2}">
+                            <strong>Sprawdź</strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 *ngIf="error" class="col-md-5 mx-auto row pt-2" style="color: red; text-align: center"> {{error}} </h3>

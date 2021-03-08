@@ -1,0 +1,137 @@
+<div class="container pt-4" style="padding-bottom: 60px;">
+
+    <div class="card-header border-top" [ngSwitch]="edit">
+        <div class="text-white p-5 shadow-sm rounded banner">
+            <p *ngSwitchCase="false" class="lead banner-title">Dodaj produkt</p>
+            <p *ngSwitchCase="true" class="lead banner-title">Edytuj produkt</p>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <form class="form" [ngClass]="{'was-validated': onClick}">
+            <div class="form-group">
+                <label>Nazwa</label>
+                <input [(ngModel)]="product.name" name="name" type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Cena</label>
+                <input [(ngModel)]="product.price" name="price" type="number" step="0.01" min="1" class="form-control"
+                    required>
+            </div>
+            <div class="form-group">
+                <label>Opis</label>
+                <textarea [(ngModel)]="product.description" name="description" type="text" class="form-control" rows="4"
+                    required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label style="padding-right: 5mm;">Rozmiar:</label>
+                <input [(ngModel)]="product.size" value="Mały" name='size' type="radio" id="Mały">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Mały">Mały</label>
+                <input [(ngModel)]="product.size" value="Średni" name='size' type="radio" id="Średni">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Średni">Średni</label>
+                <input [(ngModel)]="product.size" value="Duży" name='size' type="radio" id="Duży">
+                <label style="padding-left: 2mm" for="Duży">Duży</label>
+            </div>
+
+            <div class="form-group">
+                <label style="padding-right: 5mm;">Stanowisko:</label>
+                <input [(ngModel)]="product.stand" value="Słoneczne" name='stand' type="radio" id="Słoneczne">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Słoneczne">Słoneczne</label>
+                <input [(ngModel)]="product.stand" value="Półcieniste" name='stand' type="radio" id="Półcieniste">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Półcieniste">Półcieniste</label>
+                <input [(ngModel)]="product.stand" value="Cieniste" name='stand' type="radio" id="Cieniste">
+                <label style="padding-left: 2mm" for="Cieniste">Cieniste</label>
+            </div>
+
+            <div class="form-group">
+                <label style="padding-right: 5mm">Podlewanie:</label>
+                <input [(ngModel)]="product.watering" value="Słabe" name='watering' type="radio" id="Słabe">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Słabe">Słabe</label>
+                <input [(ngModel)]="product.watering" value="Średnie" name='watering' type="radio" id="Średnie">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Średnie">Średnie</label>
+                <input [(ngModel)]="product.watering" value="Mocne" name='watering' type="radio" id="Mocne">
+                <label style="padding-left: 2mm" for="Mocne">Mocne</label>
+            </div>
+
+            <div class="form-group">
+                <label style="padding-right: 5mm;">Okres wegetacji:</label>
+                <input [(ngModel)]="product.vegetation" [value]="180" name='vegetation' type="radio" id="180">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="180">180</label>
+                <input [(ngModel)]="product.vegetation" [value]="360" name='vegetation' type="radio" id="360">
+                <label style="padding-left: 2mm;" for="360">360</label>
+            </div>
+
+            <div class="form-group">
+                <label style="padding-right: 5mm">Uprawa:</label>
+                <input [(ngModel)]="product.cultivation" value="Łatwa" name='cultivation' type="radio" id="Łatwa">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Łatwa">Łatwa</label>
+                <input [(ngModel)]="product.cultivation" value="Średnio trudna" name='cultivation' type="radio"
+                    id="Średnia">
+                <label style="padding-left: 2mm; padding-right: 5mm;" for="Średnia">Średnio trudna</label>
+                <input [(ngModel)]="product.cultivation" value="Trudna" name='cultivation' type="radio" id="Trudna">
+                <label style="padding-left: 2mm" for="Trudna">Trudna</label>
+            </div>
+
+            <div class="form-group">
+                <label>Minimalna temperatura</label>
+                <input [(ngModel)]="product.temperature" name="temperature" type="string" class="form-control" required>
+            </div>
+
+            <div class="col-sm">
+                <label>Kategorie</label> <br>
+                <a *ngFor="let category of categories; let i = index;">
+                    <ng-container *ngIf="i ==3"><br></ng-container>
+                    <input type="checkbox" [(ngModel)]="product.categories[i]" [name]="category" [value]="category"
+                        [id]="category">
+                    <label [for]="category" style="padding-left: 2mm; padding-right: 5mm;">
+                        {{productCategories[category]}}</label>
+                </a>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label>Ilość w magazynie:</label> &nbsp;
+                <select class="custom-select d-block w-100" style="  border: 1px solid #28a745;"
+                    (change)="this.product.quantity = ($event).target.value" required>
+                    <option *ngIf="product.quantity == ''"></option>
+                    <option *ngFor="let quantity of quantities" name="quantity" [value]="quantity"
+                        [selected]="product.quantity == quantity">
+                        {{productQuantities[quantity]}}
+                    </option>
+                </select>
+            </div>
+
+
+
+            <div class="form-group">
+                <label>Dodaj zdjęcie pierwsze</label>
+                <input [(ngModel)]="product.image" name="image" type="text" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label>Dodaj zdjęcie drugie</label>
+                <input [(ngModel)]="product.image2" name="image2" type="text" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Dodaj zdjęcie trzecie</label>
+                <input [(ngModel)]="product.image3" name="image3" type="text" class="form-control" required>
+            </div>
+        </form>
+
+        <div class="buttons center" style="padding-top: 30px;">
+            <button type="button" class="btn effect01" (click)="cancel()">
+                <strong>Anuluj</strong>
+            </button> &nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn effect02" (click)="save()">
+                <strong>Zapisz</strong>
+            </button>
+        </div>
+
+    </div>
+    <div style="display: flex; justify-content: space-around;">
+        <div *ngIf="error" style="color: red;"> {{error}}
+        </div>
+    </div>
+
+</div>

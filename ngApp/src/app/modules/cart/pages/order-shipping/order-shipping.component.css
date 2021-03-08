@@ -1,0 +1,13 @@
+input[type='radio']:checked:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    top: -3.7px;
+    left: -1.6px;
+    position: relative;
+    background-color: #28a745;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}

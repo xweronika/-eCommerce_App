@@ -1,0 +1,46 @@
+
+h5 {
+    padding-top:6mm
+}
+.box {
+  display: flex; 
+  justify-content: space-around;
+}
+@media (min-width: 1300px) {
+    .card-columns {
+        column-count: 2;
+    }
+    }
+    .card 
+    {
+      background-color: rgba(255, 255, 255, 0.877)
+    }
+    
+  .color {
+    color: black; 
+  }
+  .banner-title {
+   padding-bottom: 5mm; 
+   display: flex; 
+   letter-spacing: 3px; 
+    justify-content: space-around; 
+    margin-top: -6mm;
+    font-size: 28px;
+    font-weight: 200;
+  }
+  
+  .margins {
+     margin-left: 12mm; 
+     margin-right: 12mm; 
+  }
+  .box {
+    display: flex; 
+    justify-content: space-around;
+  }
+  
+  .banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  }
+  

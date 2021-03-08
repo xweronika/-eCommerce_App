@@ -1,0 +1,119 @@
+.router{
+    margin-right: -2cm;
+    margin-left: -2cm;
+    margin-top: -22mm;
+  }
+  
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  @media only screen and (max-width: 800px) { 
+    .carousel-caption {
+      top: 18%;
+    }
+  }
+  
+  /* Medium devices */
+  @media only screen and (min-width: 768px) and (max-width: 992px) { 
+    .carousel-caption {
+      top: 21%;
+    }
+  }
+  
+  /* Large devices (laptops/desktops) */
+  @media only screen and (min-width: 992px) {
+    .carousel-caption {
+      top: 25%;
+    }
+  }
+  
+  .carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .carousel-caption b {
+    line-height: 2.6;
+    font-size: 23px;
+  }
+  
+  
+    /* BUTTON */
+  .btn {
+      cursor: pointer;
+      font-size: 16px;
+      letter-spacing: 0.04rem;
+
+    }
+.main-btn {
+    width: 16%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.modal-btn{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    width: 170px;
+}
+  
+    .btn:hover {
+      letter-spacing: 0.07em;
+    }
+    
+    /*btn_background*/
+    .effect01 {
+      color: rgb(0, 0, 0);
+      border: 1px solid #dcdcdc;
+      box-shadow:0px 0px 0px 1px  white inset;
+      background-color:  white;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+    }
+    .effect01:hover {
+      border: 1px solid #dcdcdc;
+      background-color: #db8282;
+    }
+       /*btn_background2*/
+       .effect02 {
+         color: rgb(0, 0, 0);
+         border: 1px solid #dcdcdc;
+         box-shadow:0px 0px 0px 1px  white inset;
+         background-color:  white;
+         overflow: hidden;
+         position: relative;
+         transition: all 0.3s ease-in-out;
+       }
+       .effect02:hover {
+         border: 1px solid #dcdcdc;
+         background-color: #43b95e
+     
+       }
+/*btn_background3*/
+.effect03 {
+    color: rgb(0, 0, 0);
+    border: 1px solid #dcdcdc;
+    box-shadow:0px 0px 0px 1px  white inset;
+    background-color:  white;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.effect03:hover {
+  border: 1px solid #dcdcdc;
+  background-color: #b8b8b8;
+            
+}
+           
+    
+    
+    
+    

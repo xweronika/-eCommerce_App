@@ -1,0 +1,66 @@
+.box {
+  display: flex; 
+  justify-content: space-around;
+} 
+.products {
+  max-width: 340px;
+  padding: 1px;
+  margin: 1px;
+}
+
+
+ /* BUTTON */
+ .btn {
+   letter-spacing: 0.04rem;
+   cursor: pointer;
+ }
+.main {
+  font-size: 20px;
+  margin-bottom: 2.3%;
+  margin-top: 2%;
+  width: 8cm;
+  border: 1px solid #28a745;
+  color: #28a745;
+  box-shadow:0px 0px 0px 1px  rgba(255, 255, 255, 0) inset;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.additional {
+  font-size: 16px;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #dcdcdc;
+  color: #000000;
+  border: 1px solid #dcdcdc;
+  box-shadow:0px 0px 0px 1px  white inset;
+}
+
+.btn:hover {
+  letter-spacing: 0.07em;
+}
+
+/*btn_background*/
+.effect {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.effect:hover {
+  border: 1px solid #dcdcdc;
+  background-color: #28a745;
+  color: #000000;
+}
+
+
+.pink {
+  background-color:  rgba(250, 212, 245, 0.692);
+}
+.blue {
+  background-color:  rgba(212, 249, 250, 0.692);
+}
+.yellow {
+  background-color:  rgba(250, 243, 212, 0.692);
+}
+

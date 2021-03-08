@@ -1,0 +1,18 @@
+<ul class="list-group mb-3">
+
+  <li class="list-group-item d-flex justify-content-between lh-sm">
+    <div>
+      <input [checked]="shippingName == shipping.name" type="radio" name='shipping' id={{shipping.name}}
+        (click)="calculatePrices.emit(shipping)">
+      <label class="my-0" for={{shipping.name}}>
+        <h6 style="padding-left: 3mm;">{{shipping.name}}</h6>
+      </label> <br>
+      <label><small class="text-muted" style="padding-left: 5mm;" *ngIf="shipping.time">Czas oczekiwania:
+          {{shipping.time}} dni</small></label>
+      <label><small class="text-muted" style="padding-left: 5mm;" *ngIf="shipping.adress">Adres odbioru:
+          {{shipping.adress}}</small></label>
+    </div>
+    <span class="text-muted">{{shipping.price}} zł</span>
+  </li>
+
+</ul>

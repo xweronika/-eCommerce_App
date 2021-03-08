@@ -1,0 +1,42 @@
+<div *ngFor="let special of specialsFiltered">
+    <div class="tittle">
+        <h2>{{special.name}}</h2>
+    </div><br>
+
+    <div style="margin-bottom: 20mm;" class="container">
+        <hr>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="descr">{{special.description}}</div>
+        </div>
+        <div class="column">
+            <img style="width: 70%;" src={{special.imageUrl}}>
+        </div>
+    </div>
+
+    <div class="row" style="padding-left:30mm; padding-top: 20mm;">
+
+        <div class="column">
+            <img style="width: 80%;" src={{special.imageUrl2}}>
+        </div>
+
+        <div class="column">
+
+            <ng-container *ngIf="special.listOfplants">
+                <tr *ngFor="let plant of special.listOfplants">
+                    <p style="margin-left: 30mm;">{{plant}}</p>
+                </tr>
+            </ng-container>
+
+            <ng-container *ngIf="special.description2">
+                <div class="descr2" style="margin-bottom: 3cm;">
+                    <p style="margin-right: 6cm">{{special.description2}}</p>
+                </div>
+            </ng-container>
+
+        </div>
+    </div>
+
+
+</div>

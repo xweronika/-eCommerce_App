@@ -1,0 +1,70 @@
+<div class="slide router">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/product/product.jpg">
+            <div class="carousel-caption d-md-block" *ngIf="user" style="color: black;">
+                <h5 style="color: black;">{{user.firstname}} {{user.surname}} </h5>
+                <small>{{user._id}}</small><br>
+                <p style="padding: 2mm;">Email: {{user.email}}</p>
+
+                <p><b>Dane do przesyłki:</b> </p>
+                <p *ngIf="!user.address && !user.city && !user.country && !user.phone">
+                    Brak danych</p>
+
+                <p *ngIf="user.address || user.country">{{user.address}} {{user.country}}</p>
+                <p *ngIf="user.postcode && user.city"> {{user.postcode}} {{user.city}}</p>
+                <p *ngIf="user.phone">Tel. {{user.phone}}</p>
+
+                <div class="buttons" style="padding-top: 1.5cm;">
+                    <button class="btn effect03 main-btn" routerLink="/admin/user" style="margin-right: 5mm;">
+                        <strong>Wstecz</strong>
+                    </button>
+                    <button class="btn effect02 main-btn" routerLink="orders" style="margin-right: 5mm;">
+                        <strong>Zamówienia</strong>
+                    </button>
+                    <button class="btn effect02 main-btn" routerLink="edit" style="margin-right: 5mm;">
+                        <strong>Edytuj</strong>
+                    </button>
+                    <button data-toggle="modal" data-target="#exampleModal" class="btn effect01 main-btn"
+                        *ngIf="!user.isAdmin">
+                        <strong>Usuń</strong>
+                    </button>
+
+                    <h3 *ngIf="error" style="color: red; padding-top: 1cm;">{{error}} </h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="padding-top: 3.5cm;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Usuń konto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> Czy na pewno chcesz usunąć to konto? </p>
+                <small>Uwaga, usunięcie konta jest nieodwracalne!</small>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content:center;">
+
+                <div class="buttons">
+                    <button class="btn effect01 modal-btn" (click)="deleteUser(user)" data-dismiss="modal">
+                        <strong>Usuń</strong>
+                    </button>
+                    &nbsp;&nbsp;
+                    <button data-dismiss="modal" class="btn effect02 modal-btn">
+                        <strong>Zamknij</strong>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

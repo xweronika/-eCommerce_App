@@ -1,0 +1,8 @@
+{
+    "mongodb" : { 
+        "connectionString" : null 
+    },
+    "http": {
+        "port": 3000
+    }
+}

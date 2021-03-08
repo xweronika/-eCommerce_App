@@ -1,0 +1,33 @@
+
+  .card 
+  {
+    background-color: rgba(255, 255, 255, 0.877)
+  }
+  
+.color {
+  color: black; 
+
+}
+.banner-title {
+ padding-bottom: 5mm; 
+ display: flex; 
+ letter-spacing: 4px; 
+  justify-content: space-around; 
+  margin-top: -6mm;
+  font-size: 28px;
+  font-weight: 200;
+}
+.box {
+  display: flex; 
+  justify-content: space-around;
+}
+.margins {
+   margin-left: 12mm; 
+   margin-right: 12mm; 
+}
+
+.banner {
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+}

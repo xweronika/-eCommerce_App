@@ -1,0 +1,215 @@
+<!--Main layout-->
+<div class="mt-5 pt-4" *ngIf="order">
+    <div class="container wow fadeIn">
+
+        <!-- Heading -->
+        <h2 class="my-5 h2 text-center"></h2>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-8 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card content-->
+                    <form class="card-body">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6 mb-2">
+
+                                <!--Tittle-->
+                                <div class="md-form ">
+                                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                                        <span style="color:#28a745;">Szczegóły zamówienia:</span>
+                                    </h4>
+                                </div>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6 mb-2">
+
+                                <!--Date-->
+                                <div class="md-form">
+                                    <p class="small text-muted" style="padding-left: 76%;">
+                                        Złożono dnia:<br>{{created}}
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <p>Numer zamówienia:</p>
+                                <b style="padding-top: 16px;"> {{ order._id }}</b>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Status:</label> <br>
+                                <b> {{orderStatuses[order.status]}}</b>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="d-block my-3">
+
+                            <p><b>Dane użytkownika: </b> </p>
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6 mb-2">
+
+                                    <!--Name-->
+                                    <div class="md-form ">
+                                        <p><i>Imię i nazwisko:</i> {{ order.userData.firstname }}
+                                            {{order.userData.firstname }}</p>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6 mb-2">
+
+                                    <!--Phone-->
+                                    <div class="md-form">
+                                        <p> <i>Numer tel.:</i> {{ order.userData.phone }}</p>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+                                <div class="col-md-6 mb-2">
+
+                                    <!--Adres-->
+                                    <div class="md-form ">
+                                        <p> <i>Adres:</i> {{ order.userData.address }}, {{order.userData.postcode }}
+                                            {{order.userData.city }},
+                                            {{order.userData.country }}</p>
+                                    </div>
+
+                                </div>
+
+                                <!--Grid column-->
+                                <div class="col-md-6 mb-2">
+
+                                    <!--Email-->
+                                    <div class="md-form">
+                                        <p> <i>Email:</i> {{ order.userData.email }}</p>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                        </div>
+                        <hr class="mb-4">
+
+                        <div class="buttons box">
+                            <button routerLink="/auth/user-orders" class="btn effect01 main-btn" type="button">
+                                <strong>Wstecz</strong>
+                            </button>&nbsp;&nbsp;
+                            <button *ngIf="order.status === 'order_placed'"
+                                class="btn effect02 main-btn" data-toggle="modal" data-target="#exampleModal">
+                                <strong>Anuluj zamówienie</strong>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4">
+
+                <!-- Heading -->
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Wartość zamówienia:</span>
+                    <span class="badge badge-secondary badge-pill bg-success" style="color: black;">{{count}}</span>
+                </h4>
+
+                <!-- Cart -->
+                <ul class="list-group mb-3 z-depth-1">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed"
+                        *ngFor="let item of order.items | keyvalue; let i = index">
+                        <div>
+                            <a class="my-0 h6" [routerLink]="['/product', item.key]">{{item.value.product.name}} </a>
+                            <small *ngIf="item.value.count > 1">x {{item.value.count}}</small>
+                            <br><small class="text-muted">{{item.key}}</small>
+                        </div>
+                        <span class="text-muted">{{(item.value.product.price * item.value.count).toFixed(2)}} zł</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Koszt przesyłki</h6>
+                            <small>{{order.shipping.name}}</small>
+                        </div>
+                        <span class="text-success">{{order.shipping.price}} zł</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Kwota zamówienia</span>
+                        <strong>{{order.sum}} zł</strong>
+                    </li>
+                </ul>
+                <!-- Cart -->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </div>
+</div>
+<!--Main layout-->
+
+
+
+<!--MODAL-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="padding-top: 3.5cm;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Anuluj zamówienie</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> Czy na pewno chcesz anulować to zamówienie? </p>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content:center;">
+
+                <div class="buttons">
+                    <button class="btn effect02 modal-btn" data-dismiss="modal" (click)="editStatus(order)">
+                        <strong>Tak</strong>
+                    </button>
+                    <button data-dismiss="modal" class="btn effect01 modal-btn">
+                        <strong>Nie</strong>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

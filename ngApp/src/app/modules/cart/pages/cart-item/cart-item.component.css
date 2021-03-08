@@ -1,0 +1,33 @@
+ .fab-button {
+    border-radius: 50%;
+    display: table;
+  /*  box-shadow: 0 2px 6px rgba(0,0,0,0.5);*/
+  }
+
+  .fab-button div {
+    background:  rgb(0, 0, 0);
+    margin: 11px;
+    }
+
+  .fab-button .plus {
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0  rgb(0, 0, 0), 0 -3px  rgb(0, 0, 0), 0 3px  rgb(0, 0, 0), -3px 0  rgb(0, 0, 0), 3px 0  rgb(0, 0, 0), 0 -6px  rgb(0, 0, 0), 0 6px  rgb(0, 0, 0), -6px 0  rgb(0, 0, 0), 6px 0  rgb(0, 0, 0);
+  }
+  .fab-button .minus {
+    width: 4px;
+    height: 4px;
+    box-shadow:   0 0 rgb(0, 0, 0),  -3px 0  rgb(0, 0, 0), 3px 0  rgb(0, 0, 0),   -6px 0  rgb(0, 0, 0), 6px 0  rgb(0, 0, 0);
+  }
+
+  .grid-container {
+    display: grid; 
+  }
+
+  .grid-item {
+    display: inline;
+  }
+.list-group-item {
+padding-top:0.8rem ;
+padding-bottom:0.4rem ;
+}

@@ -1,0 +1,95 @@
+.router{
+    margin-right: 2cm;
+    margin-left: 2cm;
+    margin-top: 22mm;
+}
+
+.nav-link.dropdown-item:focus{
+  background-color: rgb(214, 228, 215);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: rgb(214, 228, 215);
+}
+
+.scrollDown{
+    background-color: rgba(255, 255, 255, 0.986);
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 993px) {
+.navbar-light{
+  background-color: rgb(255, 255, 255);
+}
+.nav-link.dropdown-item {
+  width: auto;
+  text-align: center;
+}
+}
+@media only screen and (min-width: 993px) {
+  .navbar-brand {
+    margin-right: 35%;
+  }
+  .nav-link {
+    padding: .8rem 6rem;
+  }
+  .nav-link.dropdown-item {
+      width: 55mm;
+      text-align: left;
+    }
+  }
+
+  .navbar-light .navbar-brand {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: black;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-link {
+    font-size: 120%;
+    margin-left: 2mm;
+  }
+  
+  .nav-link.active,.nav-link:focus{
+    color: black;
+  }
+  
+  .navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(0, 77, 0);
+  }
+  
+
+  .notification {
+    position: relative;
+  }
+  
+
+  .notification .badge {
+    position: absolute;
+    top: -9px;
+    right: -13px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: black;
+  }

@@ -1,0 +1,43 @@
+<div class="slide router">
+    <div [ngClass]="{'carousel-inner': (8 > cartService.sumProductsInCart) }">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/cart/cart.jpg">
+            <img class="d-block w-100" src="assets/img/cart/cart2.jpg">
+            <div class="carousel-caption d-md-block">
+                <div class="row g-3">
+                    <div class="col-md-5 col-lg order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3" style="margin-bottom: 4mm;">
+                            <span class="text-muted">Twój koszyk</span>
+                            <span class="badge rounded-pill bg-success"
+                                *ngIf="cartService.sumProductsInCart !== 0">{{cartService.sumProductsInCart}}</span>
+                        </h4>
+                        <ul class="list-group ">
+                            <app-cart-item *ngFor="let item of items | keyvalue" [item]="item.value.product"
+                                [count]="item.value.count" (remove)="this.cartService.deleteItem(item.value.product)"
+                                (changeCount)="this.cartService.changeCount($event, item.value.product)">
+                            </app-cart-item>
+                            <!-- [item] - input bo pobieramy produkty (itemy) do koszyka  -->
+                            <!-- (remove) - output bo  na wyjsciu przekazujemy produkt(item) ktory chcemy usunac-->
+                            <!-- $event czli +1 lub -1 z countera 
+                                 -->
+                            <br>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Do zapłaty (+ <a routerLink="/cart/shipping">koszt dostawy</a>):</span>
+                                <strong>{{cartService.sumCartString}} zł</strong>
+                            </li>
+                        </ul>
+                        <br>
+                        <div class="text-right">
+
+                            <div class="buttons" [ngClass]="{'paddings': (cartService.sumProductsInCart > 8)}">
+                                <button routerLink="/cart/order" class="btn effect01" type="button"
+                                    [disabled]="cartService.sumOfPrices === 0">
+                                    <strong>Dalej</strong>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

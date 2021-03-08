@@ -1,0 +1,16 @@
+<div *ngFor="let special of specialsFiltered">
+    <div class="tittle">
+        <h2>{{special.name}}</h2>
+    </div><br>
+    <div class="descr">{{special.description}}</div>
+
+    <div style="margin-top: 20mm; margin-bottom: 20mm;" class="container">
+        <hr>
+    </div>
+    <div class="card-columns">
+        <div class="card" *ngFor="let img of special.imageUrl">
+            <img class="card-img-top" src={{img}} alt="Card image cap">
+        </div>
+    </div>
+
+</div>

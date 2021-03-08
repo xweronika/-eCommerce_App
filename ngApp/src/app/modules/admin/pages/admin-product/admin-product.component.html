@@ -1,0 +1,41 @@
+<div class="buttons box py-5">
+  <button [routerLink]="['/admin/product/add']" class="btn main effect " type="button">
+    <strong>Dodaj nowy produkt</strong>
+  </button>
+</div>
+
+<div *ngIf="error" style="color: red; text-align: center; padding-bottom: 1cm;">{{error}} </div>
+
+<div class="box">
+  <div class="row" style="max-width: 2800px;">
+
+    <!-- Product items -->
+    <div class="col mb-4" *ngFor="let product of products; let i = index">
+      <div class="bg-white rounded shadow-sm products">
+        <img [routerLink]="product._id" src={{product.image}} style="width: 340px; height: 250px;"
+          class="img-fluid card-img-top">
+        <div class="p-4">
+          <h5 class="d-flex align-items-center justify-content-between">
+            <a [routerLink]="product._id" class="text-dark justify-content-between" style="padding-left: 25px;">
+              {{product.name}}</a>
+            <b class="small text-muted mb-0" style="padding-right: 25px;">{{product.price}} zł</b>
+          </h5>
+
+          <div class="box" style="padding-top: 9px;">
+            <p class="card-text small text-muted">{{product._id}}</p>
+          </div>
+
+          <div class="buttons box py-2 mt-3">
+            <button class="btn additional effect" [routerLink]="product._id"
+              [ngClass]="{'pink': i%3===0, 'blue': i%3===1, 'yellow': i%3===2}">
+              <strong>Sprawdź</strong>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+  </div>
+</div>

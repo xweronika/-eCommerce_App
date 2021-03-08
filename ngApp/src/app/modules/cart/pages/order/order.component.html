@@ -1,0 +1,74 @@
+<div class="container">
+
+    <h5 class="d-flex justify-content-between align-items-center mb-3 paddings" style="padding-top: 3mm;">
+        <span class="text-muted">Twoje zamówienie:</span>
+    </h5>
+
+    <div class="col-md-6 col-lg-9 order-md-last">
+        <ul class="list-group mb-3">
+            <app-order-item *ngFor="let item of items | keyvalue" [item]="item.value.product"
+                [count]="item.value.count">
+            </app-order-item>
+        </ul>
+    </div>
+
+    <h5 class="d-flex justify-content-between align-items-center mb-3 paddings">
+        <span class="text-muted">Wybór przesyłki:</span>
+    </h5>
+
+    <div class="col-md-6 col-lg-9 order-md-last">
+        <ul class="list-group mb-3">
+            <app-order-shipping *ngFor="let shipping of shippings" [shipping]="shipping"
+                [shippingName]="this.cartService.shippingName"
+                (calculatePrices)="this.calculatePrices($event, shipping)"> </app-order-shipping>
+        </ul>
+    </div>
+
+
+    <h5 class="d-flex justify-content-between align-items-center mb-3 paddings">
+        <span class="text-muted">Płatność:</span>
+    </h5>
+
+    <div class="col-md-6 col-lg-9">
+        <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                    <label class="my-0" for="payment">
+                        <h6>Przelewem</h6>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <h5 class="d-flex justify-content-between align-items-center mb-3 paddings">
+        <span class="text-muted">Podsumowanie:</span>
+    </h5>
+
+    <div class="col-md-6 col-lg-9 order-md-last">
+        <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">
+                <b style="color: #28a745;">Do zapłaty:</b>
+                <strong style="color: #28a745;">{{cartService.sumString}} zł</strong>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="wrapper">
+        <div style="padding-top: 16mm; float: right;  width: 65%;padding: 5% 10%;">
+            <div class="buttons" style="padding-bottom: 13mm;">
+                <button routerLink="/cart" class="btn effect02">
+                    <strong>Wstecz</strong>
+                </button>&nbsp;&nbsp;
+                <button class="btn effect01" routerLink="/cart/user-data" 
+                [disabled]="cartService.shippingName ===''">
+                    <strong>Dalej</strong>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<h3 *ngIf="error" class="col-md-6 mx-auto row pt-2" style="color: red; text-align: center"> {{error}} </h3>

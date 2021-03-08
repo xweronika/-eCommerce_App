@@ -1,0 +1,171 @@
+[
+    {
+        "category": "fertilization",
+        "name": "nawożenie",
+        "imageUrl":"assets/img/special/fertilization/fr1.jpg",
+        "imageUrl2":"assets/img/special/fertilization/fr2.jpg",
+        "description": "Żeby rośliny doniczkowe dobrze rosły, konieczne jest ich nawożenie. Rośliny doniczkowe potrzebują makroelementów (między innymi azotu, fosforu, potasu) oraz mikroelementów (żelaza, manganu, cynku). Ważne jest, aby dostarczać im tych pierwiastków w odpowiednich proporcjach. Innego nawożenia wymagają rośliny doniczkowe o ozdobnych kwiatach, innego o ozdobnych liściach. Rośliny kwitnące (zwłaszcza w okresie kwitnienia) potrzebują fosforu i potasu w większych dawkach niż rośliny o ozdobnych liściach, które wymagają większych ilości azotu i magnezu. Na rynku jest ogromny wybór pożywek do zasilania roślin. Nawozy mineralne, które mają postać proszku, granulek, koncentratu lub żelu. Nawozy organiczne (najczęściej kompost przetworzony przez dżdżownice, biohumus lub ptasie guano), mają formę płynną (rozcieńcza się w wodzie do podlewania). A także nawozy organiczno-mineralne, w formie koncentratu.",
+        "description2": "Niemal dla każdej grupy roślin doniczkowych stworzono nawóz o składzie dopasowanym do ich wymagań. Swoje odżywki mają też grupy roślin o specyficznych wymaganiach, na przykład storczyki, kaktusy, paprocie. Można też wybrać nawóz uniwersalny. Najwygodniej jest zaaplikować preparat jednorazowo – wiosną. W taki sposób zasilamy rośliny nawozami o przedłużonym działaniu. Tabletki, koreczki lub pałeczki wciśnięte w glebę będą się powoli rozpuszczać, uwalniając stopniowo składniki odżywcze. Pozostałe pożywki podajemy roślinom od wiosny do jesieni w zależności od ich indywidualnych potrzeb, zwykle co 2–3 tygodnie. Zimą, gdy rośliny nie rosną, nie nawozimy ich, z wyjątkiem tych, które wtedy kwitną i nie przechodzą w okres spoczynku."
+    },
+    {
+        "category": "transplantation",
+        "name": "przesadzanie",
+        "imageUrl":"assets/img/special/transp/tr.jpg",
+        "imageUrl2":"assets/img/special/transp/tr2.jpg",
+        "description": "To jedna z tych czynności, które najczęściej przerażają nowych hodowców. Jak wiemy, ten zabieg jest niezbędny dla prawidłowego rozwoju naszych zielonych przyjaciół. Kiedy roślina jest trzymana zbyt długo w jednej ziemi i donicy, zaczyna jej brakować substancji mineralnych, a podłoże staje się wyjałowione. Przesadzanie jest konieczne szczególnie w czterech przypadkach: gdy korzenie rozsadzają doniczkę i przeciskają się przez dolne dziurki w osłonce, gdy zaobserwujesz bardzo powolny wzrost lub brak rozwoju rośliny, gdy ziemia jest niezwykle twarda w dotyku i brakuje jej sypkości i gdy korzenie zaczynają gnić z powodu przelania. Dobrym okresem na zmianę podłoża jest czas przed początkiem wegetacji (czyli przed wypuszczeniem nowych pędów) - koniec lutego albo początek marca. To w ciągu zimnych miesięcy rośliny zbierają energie, aby na wiosnę się rozwinąć.",
+        "description2": "Przesadzanie oraz nawożenie w okresie jesienno-zimowym mogłyby wprowadzić zamęt w prawidłowym cyklu życia naszych podopiecznych. Nie należy także spieszyć się z przesadzaniem nowej rośliny od razu po przyniesieniu jej ze sklepu do domu. Dajmy jej chwilę na oswojenie się z nową przestrzenią, tak aby sama mogła wysłać nam sygnały, czego potrzebuje. Wybierając dla rośliny rozmiar donicy, przede wszystkim musimy sprawdzić, czy doniczka produkcyjna mieści się w nowej osłonce. Jeżeli tak, to możemy przypuszczać, że taka wielkość będzie odpowiednia. Jeśli przesadzamy roślinę już wyrośniętą, która potrzebuje nowej donicy, to dla rośliny średniej wielkości wybierzmy osłonkę, której średnica jest większa o mniej więcej 4 centymetry. Po wykonanym zabiegu podlewamy roślinę niewielką ilością wody w temperaturze pokojowej."
+    },
+    {
+        "category": "watering",
+        "name": "podlewanie",
+        "imageUrl":"assets/img/special/watering/w.jpg",
+        "imageUrl2":"assets/img/special/watering/w2.jpg",
+        "description": "Nie ma chyba ważniejszej czynności przy uprawie roślin niż odpowiednie i systematyczne podlewanie. Roslina może się dostosować do ziemi, doniczki, przetrwać często złe warunki świetlne, jednak bez wody po prostu umrze. Dlatego nie ucieszy cię pewnie informacja, że niełatwo jest stwierdzić, ile tak naprawde nasza roslina potrzebuje nawodnienia. Nie wystarczą ogólnikowe informacje na temat danego gatunku, tu potrzebna jest baczna obserwacja rozwoju rośliny i jej reakcji na podlewanie. Na co zatem zwracać uwage? Obserwujcie tempo wchłaniania wody, ewentualną zmianę koloru i kondycji liści i łodygi. Najwięcej informacji dostarczy ci struktura liści oraz stan wilgotności ziemi. Pamiętajcie też, że oprócz tradycyjnego podlewania wiele gatunków wymaga częstego zraszania liści, szczególnie rosliny pochodzące z terenów tropikalnych.",
+        "description2": "Dobrym nawykiem jest trzymanie napełnionego wodą zraszacza zawsze pod ręką. Pozwala to na spontaniczne pryskanie lisci w dowolnym momencie. Koniecznie pamiętaj o czyszczeniu liści! Kurz osadzający się na nich może bardzo mocno przylegać, powodując zatykanie otworów szparkowych, co ogranicza dostęp światta i oddychanie roślin. Z tego powodu rośliny - zwłaszcza te wielkolistne - powinny być dość często zmywane letnią i miękką wodą, używaj do tego gąbki lub delikatnej szmatki. Pamiętaj, że roślin mocno rozgałęzionych, a także kaktusów i łamliwych sukulentów pod żadnym pozorem nie wolno myć w taki sposób. Do ich czyszczenia używaj pędzelka z naturalnego włosia."
+    
+    },
+    {
+        "category": "cats",
+        "name": "o kotach",
+        "imageUrl":"assets/img/special/cats/cat.jpg",
+        "imageUrl2":"assets/img/special/cats/cat2.jpg",
+        "description": "Choć to poradnik o roślinach, nie mozemy nie wspomnieć w nim o zwierzętach. A szczególnie o puszystych czworonogach, które nie byłyby sobą, gdyby od czasu do czasu nie poskubały naszych doniczkowców. Oczywiscie nie jest to reguła, bo nie kazdy kot wykazuje zainteresowanie roślinami, jednak warto wiedzieć, które gatunki są szczególnie niebezpieczne dla zwierząt. Poniżej znajdziesz listę wybranych roślin, które mogą zaszkodzić twojemu kociakowi. Lista nie jest pełna, ponieważ skupiłyśmy się na roślinach, którymi się otaczamy. Zawsze przed zakupem sprawdź, czy planowany nabytek na pewno będzie dla twojego zwierzaka bezpieczny. Warto też wiedzieć, że nie zawsze roślina zadziała toksycznie, wiele zależy od ilości zjedzonej trucizny oraz samego zwierzaka. Niektóre koty mają silne, wytrzymałe żołądki i nic im się nie stanie, inne natomiast nawet po niewielkiej dawce mogą czuć się źle i wymagać wizyty u weterynarza.",
+        "listOfplants": [
+            "AGLAONEMA",
+            "EPIPREMNUM",
+            "ALOES",
+            "FIGOWCE (FIKUSY)",
+            "ALOKAZJA",
+            "FILODENDRONY",
+            "ANTURIUM",
+            "KROTON",
+            "BEGONIA",
+            "SANSEWIERIA",
+            "CYKAS",
+            "SKRZYDŁOKWIAT",
+            "DIFENBACHIA",
+            "SZPARAG (ASPARAGUS)",
+            "DRACENA",
+            "WILCZOMLECZE"
+        ]
+    },
+    {
+        "category": "airCleaning",
+        "name": "oczyszczanie powietrza",
+        "imageUrl":"assets/img/special/air/air.jpg",
+        "imageUrl2":"assets/img/special/air/air2.jpg",
+        "description": "Tyle się teraz mówi o smogu. A czy wiesz, że zanieczyszczone powietrze wdychamy nie tylko na ruchliwej ulicy, ale też - a właściwie przede wszystkim - w naszych dornach, miejscach pracy i innych zamkniętych przestrzeniach, gdzie łącznie spędzamy około 90 procent czasu? Gdybyśmy zbadali pod mikroskopem to, co unosi się w powietrzu dusznego, źle wentylowanego biura, widok prawdopodobnie przypominałby zadymkę śnieżną, z wirującymi toksynami zamiast płatków lodu.  Zanieczyszczone powietrze w budynkach to jedno z pięciu głównych zagrożeń dla naszego zdrowia. I tu z pomocą przychodzą nam rośliny! Okazuje się, że większość powszechnie uprawianych kwiatów doniczkowych pochłania te toksyny. O tym, że rośliny wydychany przez nas dwutlenek węgla przerabiają na życiodajny tlen, wiemy już ze szkoły podstawowej. Wraz z powietrzem przez liście pobierany jest nie tylko dwutlenek węgla, ale także inne toksyny, które następnie zostają przetransportowane do korzeni.",
+        "description2": "Tam żyjące w symbiozie z rośliną drobnoustroje glebowe przerabiają je na łatwo przyswajalne i pożyteczne związki organiczne (niektóre związki rozkładane są przez samą roślinę). Dla zachowania idealnej kondycji powietrza w przestrzeniach zamkniętych, na każde 12 m2 mieszkania (co odpowiada wielkości średniego standardowego pokoju) powinniśmy mieć kilka większych roślin (30-60 cm). To jednak sporo. Ale nawet jeśli nie wyobrażamy sobie życia w takiej dżungli albo jesteśmy przekonani, że nie mamy ręki do kwiatów, warto spróbować i zacząć uprawę roślin od paru mniej wymagających gatunków z kategorii „oczyszczające powietrze”. Razem z zielenią do naszych mieszkań wprowadzamy pozytywną zmianę, która będzie mieć kluczowe znaczenie dla naszego zdrowia i samopoczucia. Uprawiajmy rośliny!"
+    },
+    {
+        "category": "irradiation",
+        "name": "naświetlanie",
+        "imageUrl":"assets/img/special/irradiation/i.jpg",
+        "imageUrl2":"assets/img/special/irradiation/i2.jpg",
+        "description": "Za pomocą światła rośliny są w stanie przeprowadzić fotosyntezę, zapewniając sobie pokarm. U większości z nich niedobór promieni UV hamuje rozwój i procesy życiowe, a dla słabszych bywa zabójczy. Oczywiście nie wszystkie rośliny potrzebują światła w takim samym stopniu. Są takie, które muszą stać w miejscu nasłonecznionym, bo inaczej marnieją, i takie, które wolą cień. Dlatego zanim wybierzemy kwiaty do naszego domu, zwróćmy uwagę, jak widno jest w poszczególnych pomieszczeniach i jak zmienia się w nich światło w ciągu dnia. Które okna wychodzą na wschód lub południe, a które na zachód czy północ. Od tego zależy, jakim kwiatom będzie u nas dobrze. W zależności od zapotrzebowania na światło rośliny dzielimy na trzy grupy. Pierwsza, stosunkowo mało liczna, to te, które ubóstwiają słońce. Do drugiej, najliczniejszej grupy, zaliczają się rośliny, które preferują półcień. Ostatnia, najmniej liczna grupa, to rośliny cieniolubne, które najlepiej się czują w głębi mieszkania.",
+        "description2": "Większość kwiatów doniczkowych nie lubi zmian i źle znosi przestawianie. To dlatego, że zwracają się w stronę światła. Jeśli przyjrzymy się roślinie na parapecie, zobaczymy, że od strony okna rośnie bujniej. Często popełnianym błędem jest przenoszenie roślin w nowe miejsce bez zachowania tej samej orientacji względem źródła światła. W nowym ustawieniu muszą spożytkować ogromną ilości energii, żeby się odwrócić i przystosować do nowych warunków, a to może je osłabić. Pamiętajmy więc, by oznaczyć położenie rośliny w stosunku do słońca. Kiedy zdecydujemy się zmienić jej miejsce ustawiamy ją w tym samym położeniu wobec światła."
+    },
+    {
+        "category": "pots",
+        "name": "donice",
+        "imageUrl":"assets/img/special/pots/pot.jpg",
+        "imageUrl2":"assets/img/special/pots/pot2.jpg",
+        "description": "Podczas pielęgnacji rośliny musimy wziąć pod uwagę naczynie, w którym ma się ona rozwijać. Istnieją dwa rodzaje pojemników: doniczka z otworem odpływowym i podstawką lub osłonka, która otworu nie ma, a sadząc do niej roślinę, należy zapewnić jej drena, na przykład warstwę keramzytu. Kwestia zapewnienia odpływu jest często ignorowana, a wybierając naczynie, zwłaszcza początkujący hodowcy skupiają się wyłącznie na względach estetycznych. Na szczęście powstaje coraz więcej firm oferujących dobrej jakości doniczki, osłonki i podstawki, które zaspokoją oczy i gusta najbardziej wybrednych kolekcjonerów. Wsród najpopularniejszych doniczek możemy wymienić gliniane, plastikowe i ceramiczne, rzadziej wykorzystywane są metalowe lub drewniane. Jednym z najtańszych i najczęściej wybieranych materiałów jest terakota (czyli wypalona glina), taka doniczka ma porowate ściany, które zapewniają dobrą wymianę powietrza i wilgoci.",
+        "description2": "W doborze doniczki istotne są też jej wielkość i głębokość, te parametry muszą odpowiadać rozmiarom systemu korzeniowego danej rośliny i sposobowi jego rozrastania się. Na przykład kaktusy i inne sukulenty mają płytki system korzeniowy, więc wymagają płytkich naczyn, zaś palmy i rośliny drzewiaste o długich korzeniach potrzebują głębokich (wysokich) doniczek."
+    },
+    {
+        "category": "salon",
+        "name": "salon",
+        "description": "To zazwyczaj największe pomieszczenie w domu, przez co musi łączyć wiele różnych funkcji. Jest to miejsce, w którym relaksujemy się po pracy, gościmy przyjaciół w piątkowe wieczory, a w niedzielę odpoczywamy przy dobrej książce z kubkiem herbaty. Ze względu na to, że spędzamy w tym pokoju dużo czasu, musimy po prostu lubić w nim przebywać. Salon to idealna sceneria dla dużej ilości zieleni. Jeżeli masz przestronną, otwartą  przestrzeń, wykorzystaj podłogę. Ustaw rośliny pojedynczo lub w grupie w zależności od tego, jaki efekt chcesz uzyskać. Rozrośnięte i drzewiaste okazy, takie jak fikus Benjamina albo dracena, ze względu na swój rozmiar zapewnią wyraźny i widowiskowy akcent zieleni (pamiętaj, że większe rośliny wymagają dużych donic, dlatego bardzo ważne jest, aby dobierać je według potrzeb danego gatunku). Jezeli twój salon jest przepełniony meblami i brakuje miejsca na rośliny dużego gabarytu, postaraj się to obejść - roślina pomiędzy książkami na regale, a może obok pamiątkowych ramek ze zdjęciami? Baw się, kombinuj i przestawiaj. Potraktuj swój salon jako całość i stwórz unikatową kompozycję.",
+        "imageUrl": [
+            "assets/img/arrangements/salon/ (1).jpg",
+            "assets/img/arrangements/salon/ (2).jpg",
+            "assets/img/arrangements/salon/ (3).jpg",
+            "assets/img/arrangements/salon/ (4).jpg",
+            "assets/img/arrangements/salon/ (5).jpg",
+            "assets/img/arrangements/salon/ (6).jpg",
+            "assets/img/arrangements/salon/ (7).jpg",
+            "assets/img/arrangements/salon/ (8).jpg",
+            "assets/img/arrangements/salon/ (9).jpg",
+            "assets/img/arrangements/salon/ (10).jpg",
+            "assets/img/arrangements/salon/ (11).jpg",
+            "assets/img/arrangements/salon/ (12).jpg"
+        ]
+    },
+    {
+        "category": "study",
+        "name": "pracownia",
+        "description": "Przestrzeń, w której pracujemy, powinna być nie tylko praktyczna i funkcjonalna, ale także zadbana i zachęcająca do działania. Nieistotne, czy jest to biurko w domu, ogromna pracownia, czy zatłoczony stół - w miejscu pracy powinieneś się czuć zmotywowany i zainspirowany. Pracownie są najczęściej pomieszczeniami, w których upychamy wszystkie książki, dokumenty, sztalugi lub inny sprzęt potrzebny do pracy. Dlatego wybierając roślinę, postaw na gatunki rosnące wzwyż, które nie zabierają dodatkowej przestrzeni. Pamiętaj też, żeby nie przytłoczyć pokoju roślinnością. W końcu ma to być przestrzeń, w której masz się skupić. Naszym biurowym typem są przede wszystkim monstery, areki i inne palmy, draceny oraz pieniążek. Polecamy także postawić na biurku maleńki sukulent, który idealnie wpasowuje się w twórcze środowisko. Planując zazielenić gabinet lub inne miejsce pracy, wybieraj gatunki mało wymagające. Rada dla osób pracujących pod presją czasu: zielony jest uważany za kolor spokoju, a otaczanie się nim redukuje stres!",
+        "imageUrl": [
+            "assets/img/arrangements/study/ (1).jpg",
+            "assets/img/arrangements/study/ (2).jpg",
+            "assets/img/arrangements/study/ (3).jpg",
+            "assets/img/arrangements/study/ (4).jpg",
+            "assets/img/arrangements/study/ (5).jpg",
+            "assets/img/arrangements/study/ (6).jpg",
+            "assets/img/arrangements/study/ (7).jpg",
+            "assets/img/arrangements/study/ (8).jpg",
+            "assets/img/arrangements/study/ (9).jpg",
+            "assets/img/arrangements/study/ (10).jpg",
+            "assets/img/arrangements/study/ (11).jpg",
+            "assets/img/arrangements/study/ (12).jpg"
+        ]
+    },
+    {
+        "category": "bedroom",
+        "name": "sypialnia",
+        "description": "Sypialnia, czyli najintymniejsze miejsce w każdym domu, to często pomijana przestrzeń do wypełniania zielenią. Naszą uwagę skupiamy na bardziej reprezentacyjnych miejscach, zapominając o tym, jak przyjemne może być zasypianie i budzenie się wśród roślin. To miejsce relaksu i regeneracji, w czym rośliny z pewnością pomagają. Otocz się nimi, bo w końcu spędzasz w łóżku średnio jedną trzecią swojego życia! Nieważne, czy zdecydujesz się na małą roślinę na stoliku nocnym, czy skomponujesz minidżunglę na komodzie - każde z tych rozwiązań wprowadzi wyjątkowy nastrój. W sypialni sprawdzają się gatunki charakteryzujące się odwróconą fotosyntezą, czyli takie, które w nocy produkują tlen (skrzydłokwiat, wężownica czy figowiec). Poprawią jakość wdychanego przez nas powietrza i sprawią, że nasz sen będzie jeszcze zdrowszy. Naszymi typami sypialnianych roślin są przede wszystkim: mało wymagająca sansewietia nazywana też wężownicą, aloes (pamiętaj, że potrzebuje on wiele światła), dracena wonna oraz niezwykle popularne drzewko szczęścia, czyli grubosz drzewiasty. Podobnie jak w przypadku kuchni, unikaj gatunków wydzielających zapachy – mogą zakłócać odpoczynek i wywoływać reakcje alergiczne!",
+        "imageUrl": [
+            "assets/img/arrangements/bedroom/ (1).jpg",
+            "assets/img/arrangements/bedroom/ (2).jpg",
+            "assets/img/arrangements/bedroom/ (3).jpg",
+            "assets/img/arrangements/bedroom/ (4).jpg",
+            "assets/img/arrangements/bedroom/ (5).jpg",
+            "assets/img/arrangements/bedroom/ (6).jpg",
+            "assets/img/arrangements/bedroom/ (7).jpg",
+            "assets/img/arrangements/bedroom/ (8).jpg",
+            "assets/img/arrangements/bedroom/ (9).jpg",
+            "assets/img/arrangements/bedroom/ (10).jpg",
+            "assets/img/arrangements/bedroom/ (11).jpg",
+            "assets/img/arrangements/bedroom/ (12).jpg"
+        ]
+    },
+    {
+        "category": "kitchen",
+        "name": "kuchnia",
+        "description": "Bez dwóch zdań kuchnia to serce każdego domu. To wyjątkowe i wielofunkcyjne miejsce służy nie tylko do przyrządzania posiłków. To tutaj razem z rodziną i przyjaciółmi spędzamy wolny czas na wspólnym gotowaniu i niekończących się rozmowach. To przestrzeń do odrabiania przez dzieci lekcji, kiedy ich rodzice przygotowują dla nich obiad, i stanowisko pracy, kiedy odpowiadamy na mejle podczas śniadania. Jest to także superważny punkt towarzyskich spotkań - przecież każda domówka kończy się w kuchni! W kuchni masz tysiące miejsc, w których możesz ustawić rośliny: półki, szafki, blat i parapet, a nawet lodówkę. Pamiętaj jednak, że ta przestrzeń musi być funkcjonalna, więc postaraj się rozmieścić rośliny na tyle sprytnie, by nie przeszkadzały ci w rutynowych czynnościach. Nad zlewem i kuchenką nie umieszczaj wiszących okazów, których pnącza (mimo iż są przepiękne!) będą cię irytować swoją obecnością. Według nas najlepsze są małe i kompaktowe gatunki, które nie będą przeszkadzać podczas gotowania czy zmiany zastawy na stole, a jednocześnie będą cieszyć oko tak gospodarza domu, jak i jego gości.",
+        "imageUrl": [
+            "assets/img/arrangements/kitchen/ (1).jpg",
+            "assets/img/arrangements/kitchen/ (2).jpg",
+            "assets/img/arrangements/kitchen/ (3).jpg",
+            "assets/img/arrangements/kitchen/ (4).jpg",
+            "assets/img/arrangements/kitchen/ (5).jpg",
+            "assets/img/arrangements/kitchen/ (6).jpg",
+            "assets/img/arrangements/kitchen/ (7).jpg",
+            "assets/img/arrangements/kitchen/ (8).jpg",
+            "assets/img/arrangements/kitchen/ (9).jpg",
+            "assets/img/arrangements/kitchen/ (10).jpg",
+            "assets/img/arrangements/kitchen/ (11).jpg",
+            "assets/img/arrangements/kitchen/ (12).jpg"
+        ]
+    },
+    {
+        "category": "bathroom",
+        "name": "łazienka",
+        "description": "Łazienka to idealne miejsce dla gatunków kochających dużą wilgotność powietrza. Niemal wszystkie rośliny tropikalne uwielbiają takie warunki, a wyjątkowo dobrze odnajdą się tam epipremnum, syngonium lub skrzydłokwiat. Zazwyczaj, urządzając przestrzeń łazienki, skupiamy się na jej funkcjonalności, zupełnie zapominając o dodatkach, które mogłyby sprawić, że stałaby się przytulnym pomieszczeniem. Rośliny możesz umieścić w koszu z trawy morskiej, co ociepli chłodny wystrój tego pomieszczenia, albo postawić je na parapecie lub drewnianym taborecie. Jeśli zdecydujesz się na zazielenienie łazienki, pamiętaj, że zbyt duża wilgotność powietrza sprzyja powstawaniu grzybów w ziemi i ich rozwojowi na powierzchni liści. Aby uchronić roślinki przed chorobami, koniecznie wietrz łazienkę. Decydując, czy doniczki postawić obok zlewu, czy nad toaletą, postaraj się przewidzieć, jak będzie wyglądała roślina, gdy trochę podrośnie. Żaden okaz nie powinien być narażony na niepotrzebne przemieszczanie lub kontakt z innymi obiektami - jeśli roślina się rozwinie, pilnuj, aby drzwiczki szafek nie przytrzaskiwały liści, a powieszone pranie ich nie trącało. Jeżeli twoja łazienka jest pozbawiona okna, zrezygnuj ze wstawiania do niej roślin.",
+        "imageUrl": [
+            "assets/img/arrangements/bathroom/ (1).jpg",
+            "assets/img/arrangements/bathroom/ (2).jpg",
+            "assets/img/arrangements/bathroom/ (3).jpg",
+            "assets/img/arrangements/bathroom/ (4).jpg",
+            "assets/img/arrangements/bathroom/ (5).jpg",
+            "assets/img/arrangements/bathroom/ (6).jpg",
+            "assets/img/arrangements/bathroom/ (7).jpg",
+            "assets/img/arrangements/bathroom/ (8).jpg",
+            "assets/img/arrangements/bathroom/ (9).jpg",
+            "assets/img/arrangements/bathroom/ (10).jpg",
+            "assets/img/arrangements/bathroom/ (11).jpg",
+            "assets/img/arrangements/bathroom/ (12).jpg"
+        ]
+    }
+]

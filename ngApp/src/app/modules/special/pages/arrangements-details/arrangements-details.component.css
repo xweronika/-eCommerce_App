@@ -1,0 +1,12 @@
+.tittle {
+    display: flex; justify-content: space-around;
+    padding-top: 1cm; 
+}
+.descr {
+    display: flex; 
+    justify-content: space-around;
+    padding-left: 3cm;
+    padding-right: 3cm;
+    font-weight: 100; 
+    font-size: 6mm;
+}

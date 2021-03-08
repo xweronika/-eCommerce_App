@@ -1,0 +1,70 @@
+.container {
+padding-left: 16%;
+}
+ 
+ /* BUTTON */
+.btn {
+     cursor: pointer;
+     font-size: 16px;
+     width: 120px;
+     letter-spacing: 0.04rem;
+   }
+ 
+   .btn:hover {
+     letter-spacing: 0.07em;
+   }
+   
+   /*btn_background*/
+   .effect01 {
+     color: rgb(0, 0, 0);
+     border: 1px solid #dcdcdc;
+     box-shadow:0px 0px 0px 1px  white inset;
+     background-color:  white;
+     overflow: hidden;
+     position: relative;
+     transition: all 0.3s ease-in-out;
+   }
+   .effect01:hover {
+     border: 1px solid #dcdcdc;
+     background-color: #28a745;
+ 
+   }
+      /*btn_background2*/
+      .effect02 {
+        color: rgb(0, 0, 0);
+        border: 1px solid #dcdcdc;
+        box-shadow:0px 0px 0px 1px  white inset;
+        background-color:  white;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+      }
+      .effect02:hover {
+        border: 1px solid #dcdcdc;
+        background-color: #b8b8b8;
+      }
+   
+
+ /* RADIO */
+
+ input[type='radio']:checked:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  top: -3.7px;
+  left: -1.6px;
+  position: relative;
+  background-color: #28a745;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+/* OTHERS */
+.paddings {
+  padding-left: 4mm;
+}
+
+
+

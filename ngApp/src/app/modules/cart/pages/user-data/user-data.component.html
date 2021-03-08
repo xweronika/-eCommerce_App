@@ -1,0 +1,62 @@
+<div class="wrapper text-center">
+    <div class="container">
+
+        <h5>Wprowadź swoje dane:</h5>
+        <div class="d-md-block">
+            <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()" [ngClass]="{'was-validated': onClick}">
+                <div class="name">
+                    <div>
+                        <label for="firstname"><strong>Imię</strong></label>
+                        <input class="form-control" id="firstname" type="text" formControlName="firstname" required>
+                    </div>
+                    <div>
+                        <label for="surname"><strong>Nazwisko</strong></label>
+                        <input class="form-control" id="surname" type="text" formControlName="surname" required>
+                    </div>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="address"><strong>Ulica i numer</strong></label>
+                        <input class="form-control" id="address" type="text" formControlName="address" required>
+                    </div>
+                    <div>
+                        <label for="country"><strong>Kraj</strong></label>
+                        <input class="form-control" id="country" type="text" formControlName="country" required>
+                    </div>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="postcode"><strong>Kod pocztowy</strong></label>
+                        <input class="form-control" id="postcode" type="text" formControlName="postcode" required>
+                    </div>
+                    <div>
+                        <label for="city"><strong>Miasto</strong></label>
+                        <input class="form-control" id="city" type="text" formControlName="city" required>
+                    </div>
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="email"><strong>Email</strong></label>
+                        <input class="form-control" id="email" type="text" formControlName="email" required>
+                    </div>
+                    <div>
+                        <label for="phone"><strong>Numer Telefonu</strong></label>
+                        <input class="form-control" id="phone" type="text" formControlName="phone" required>
+                    </div>
+                </div>
+
+
+                <div class="buttons" style="padding-top: 13mm;">
+                    <a routerLink="/cart/order" class="btn effect02" type="button">
+                        <strong>Wstecz</strong>
+                    </a>
+                    <button class="btn effect01" type="submit">
+                        <strong>Zamawiam</strong>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<h3 *ngIf="error" class="col-md-5 mx-auto row pt-2" style="color: red; text-align: center"> {{error}} </h3>

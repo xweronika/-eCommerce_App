@@ -1,0 +1,58 @@
+.box {
+    display: flex; justify-content:center;
+}
+
+  /* BUTTON */
+  .btn {
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.04rem;
+  }
+  .main-btn {
+    padding-bottom: 9px;
+    padding-top: 9px;
+    width: 43%;
+  }
+
+  .modal-btn{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    width: 170px;
+  }
+  .btn:hover {
+    letter-spacing: 0.07em;
+  }
+  
+  /*btn_background*/
+  .effect02 {
+    color: rgb(0, 0, 0);
+    border: 1px solid #dcdcdc;
+    box-shadow:0px 0px 0px 1px  white inset;
+    background-color:  white;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+  }
+  .effect02:hover {
+    border: 1px solid #dcdcdc;
+    background-color: #db8282;
+  }
+      /*btn_background2*/
+      .effect01 {
+        color: rgb(0, 0, 0);
+        border: 1px solid #dcdcdc;
+        box-shadow:0px 0px 0px 1px  white inset;
+        background-color:  white;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+      }
+      .effect01:hover {
+        border: 1px solid #dcdcdc;
+        background-color: #b8b8b8;
+      }
+  
+  
+  
+  

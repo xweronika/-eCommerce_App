@@ -1,0 +1,26 @@
+
+<div class="list-group-item">
+    <div class="grid-container" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="grid-item">
+            <a style="float:left; color:  black;" class="h6" [routerLink]="['/product', item._id]">
+                <span>{{item.name}}</span></a>
+        </div>
+        <div class="grid-item">
+            <a class="fab-button red bg-success" style=" float:right;">
+                <div class="plus"></div>
+            </a>
+            <a style="float:right;">
+                <small class="text-muted">
+                    Ilość: {{count}}</small>
+            </a>
+            <a class="fab-button red bg-success" style=" float: right;">
+                <div class="minus"></div>
+            </a>
+        </div>
+        <div class="grid-item">
+            <span class="text-muted" style="float:right;">
+                {{item.price}} zł
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container" style="padding-top: 2%;">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Koszt i czas dostawy</h1><br>
+    <p class="lead">Koszt i przewidywany czas realizacji zamówienia zależą od wskazanego rodzaju dostawy.
+      <br>Dokonując zakupu można wybrać jedną z następujących opcji:<br>
+    </p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    <div *ngFor="let shipping of shippings">
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal">{{shipping.name}}</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">{{shipping.price}} zł</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li *ngIf="shipping.time">Czas oczekiwania: {{shipping.time}} dni</li>
+              <li *ngIf="shipping.adress">Adres odbioru: {{shipping.adress}}</li>
+              <li *ngIf="shipping.eco">Opakowanie eko: Tak</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <h3 *ngIf="error" class="col-md-6 mx-auto row pt-2" style="color: red; text-align: center"> {{error}} </h3>

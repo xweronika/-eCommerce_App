@@ -1,0 +1,175 @@
+<div style="margin-right: -2cm; margin-left: -2cm; margin-top: -22mm;">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active carousel-item1">
+            <img class="d-block w-100" src="assets/img/product/product.jpg">
+            <div class="carousel-caption d-md-block">
+
+                <div *ngIf="product" class="product">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                                <div class="carousel-inner img-inner" role="listbox">
+                                    <div class="carousel-item imge active">
+                                        <a href={{product.image}}>
+                                            <img class="img-thumbnail w-100 d-block" src={{product.image}}
+                                                alt="Slide Image" loading="lazy" style="height: 462px;">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item imge">
+                                        <a href={{product.image2}}>
+                                            <img class="img-thumbnail w-100 d-block" src={{product.image2}}
+                                                alt="Slide Image" style="height: 462px;">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item imge">
+                                        <a href={{product.image3}}>
+                                            <img class="img-thumbnail w-100 d-block" src={{product.image3}}
+                                                alt="Slide Image" style="height: 462px;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div><a class="carousel-control-prev" href="#carousel-1" role="button"
+                                        data-slide="prev"><span class="carousel-control-prev-icon"></span><span
+                                            class="sr-only">Previous</span></a><a class="carousel-control-next"
+                                        href="#carousel-1" role="button" data-slide="next"><span
+                                            class="carousel-control-next-icon"></span><span
+                                            class="sr-only">Next</span></a>
+                                </div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                                    <li data-target="#carousel-1" data-slide-to="2"></li>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <div class="col-md-7">
+                            <div class="container" style="padding-right: 4cm">
+                                <div style="display: flex; justify-content: space-around; padding-left: 14mm">
+                                    <div>
+                                        <a class="text-uppercase h2"
+                                            style="letter-spacing: 3px; padding-right: 6mm;">{{product.name}}
+                                        </a>
+
+                                        <a *ngFor="let category of product.categories; let i = index">
+
+                                            <img style="height: 37px;" src={{productCategoriesIcons[category]}}>
+
+                                            <a style="position: fixed;">
+                                                <a class="move-cursor" style="right: 1.8rem;">
+                                                    <div class="info">{{productCategories[category]}}
+                                                    </div>
+                                                </a>
+                                            </a>
+
+                                            &nbsp;
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="padding-top: 20px;">
+                                    <div class="col  border-bottom border-top"
+                                        style="font-weight: 300; padding-top: 20px; padding-bottom: 30px;">
+                                        <b>{{product.description}}</b>
+                                    </div>
+                                    <div class="col  border-bottom border-top border-left">
+                                        <table class="table table-borderless ">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><a>Rozmiar</a></th>
+                                                    <td>{{product.size}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><a>Podlewanie</a></th>
+                                                    <td>{{product.watering}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><a>Okres wegetacji</a></th>
+                                                    <td>{{product.vegetation}} dni</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><a>Uprawa</a></th>
+                                                    <td>{{product.cultivation}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><a>Minimalna temp.</a></th>
+                                                    <td>{{product.temperature}} &deg;C</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><a>Ilość w magazynie</a></th>
+                                                    <td>{{productQuantities[product.quantity]}}</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+
+                                <div class="price" style="padding-top: 4mm;">
+                                    <img style="height: 10mm;" src="assets/img/product/money.png">
+                                    <b> {{product.price}} zł</b>
+                                </div>
+                                <hr>
+
+                                <div class="mt-3" style="padding-top: 10px; display: flex; justify-content:center;">
+
+                                    <div class="buttons">
+                                        <button class="btn effect03 main-btn" [routerLink]="['/admin/product']">
+                                            <strong>Wstecz</strong>
+                                        </button>
+                                        &nbsp;
+                                        <button class="btn effect02 main-btn" routerLink="edit">
+                                            <strong>Edytuj</strong>
+                                        </button> &nbsp;
+                                        <button data-toggle="modal" data-target="#exampleModal"
+                                            class="btn effect01 main-btn">
+                                            <strong>Usuń</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                                <h3 *ngIf="error" class="col-md-6 mx-auto row pt-2"
+                                    style="color: red; text-align: center">{{error}} </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true" style="padding-top: 3.5cm;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Usuń produkt</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p> Czy na pewno chcesz usunąć ten produkt? </p>
+                <small>Uwaga, usunięcie produktu jest nieodwracalne!</small>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content:center;">
+
+                <div class="buttons">
+                    <button class="btn effect01 modal-btn" (click)="deleteProduct(product)" data-dismiss="modal">
+                        <strong>Usuń</strong>
+                    </button>
+                    &nbsp;&nbsp;
+                    <button data-dismiss="modal" class="btn effect02 modal-btn">
+                        <strong>Zamknij</strong>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
