@@ -1,5 +1,5 @@
 # eCommerce_App
-Web app of plants store with authentication system, created in MEAN Stack technology - MongoDB, Express, Angular, and Node.
+Web app of plants store with authentication system, created in MEAN Stack technology (MongoDB, Express, Angular, and Node.js).
 
 
 ______________________________________________________________________________________________________________________________________
